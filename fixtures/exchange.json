@@ -1,0 +1,312 @@
+{
+  "groups": [
+    {
+      "id": "EQ-1",
+      "family": "聚合物",
+      "catalog_visible": null
+    },
+    {
+      "id": "EQ-2",
+      "family": "聚合物",
+      "catalog_visible": null
+    },
+    {
+      "id": "EQ-3",
+      "family": "聚合物",
+      "catalog_visible": "2027-01-18T08:00:00+08:00"
+    },
+    {
+      "id": "EQ-4",
+      "family": "合金",
+      "catalog_visible": null
+    },
+    {
+      "id": "EQ-5",
+      "family": "合金",
+      "catalog_visible": null
+    },
+    {
+      "id": "EQ-6",
+      "family": "聚合物",
+      "catalog_visible": null
+    }
+  ],
+  "suites": [
+    {
+      "id": "R-1",
+      "closes": "2027-01-18T10:00:00+08:00",
+      "min_coverage": 2,
+      "error": 5,
+      "suite_family": "聚合物",
+      "samples": [
+        [
+          "C-117",
+          "EQ-1"
+        ],
+        [
+          "C-118",
+          "EQ-2"
+        ],
+        [
+          "C-119",
+          "EQ-3"
+        ],
+        [
+          "C-120",
+          "EQ-6"
+        ]
+      ]
+    },
+    {
+      "id": "R-2",
+      "closes": "2027-01-18T14:00:00+08:00",
+      "min_coverage": 2,
+      "error": 4,
+      "suite_family": "合金",
+      "samples": [
+        [
+          "W-035",
+          "EQ-4"
+        ],
+        [
+          "W-036",
+          "EQ-5"
+        ],
+        [
+          "W-040",
+          "EQ-2"
+        ]
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "QING",
+      "suites": [
+        "R-1",
+        "R-2"
+      ]
+    },
+    {
+      "id": "HE",
+      "suites": [
+        "R-1"
+      ]
+    },
+    {
+      "id": "JU",
+      "suites": [
+        "R-1",
+        "R-2"
+      ]
+    },
+    {
+      "id": "YUAN",
+      "suites": [
+        "R-1",
+        "R-2"
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "id": "P-10",
+      "team": "QING",
+      "suite": "R-1",
+      "generation": 1,
+      "entered": "2027-01-18T09:20:00+08:00",
+      "predictions": {
+        "C-117": 102,
+        "C-118": 94,
+        "C-119": 100,
+        "C-120": 76
+      }
+    },
+    {
+      "id": "P-11",
+      "team": "HE",
+      "suite": "R-1",
+      "generation": 1,
+      "entered": "2027-01-18T09:34:00+08:00",
+      "predictions": {
+        "C-117": 100,
+        "C-118": 107,
+        "C-120": 82
+      }
+    },
+    {
+      "id": "P-12",
+      "team": "JU",
+      "suite": "R-1",
+      "generation": 1,
+      "entered": "2027-01-18T09:38:00+08:00",
+      "predictions": {
+        "C-117": 101,
+        "C-118": 88,
+        "C-120": 84
+      }
+    },
+    {
+      "id": "P-13",
+      "team": "YUAN",
+      "suite": "R-2",
+      "generation": 1,
+      "entered": "2027-01-18T12:10:00+08:00",
+      "predictions": {
+        "W-035": 130,
+        "W-036": 141,
+        "W-040": 94
+      }
+    },
+    {
+      "id": "P-14",
+      "team": "QING",
+      "suite": "R-1",
+      "generation": 2,
+      "entered": "2027-01-18T10:11:00+08:00",
+      "predictions": {
+        "C-117": 100,
+        "C-118": 108,
+        "C-120": 83
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "id": "X-1",
+      "group": "EQ-1",
+      "value": 100,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-2",
+      "group": "EQ-2",
+      "value": 93,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-3",
+      "group": "EQ-3",
+      "value": 100,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-4",
+      "group": "EQ-4",
+      "value": 132,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-5",
+      "group": "EQ-5",
+      "value": 140,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-6",
+      "group": "EQ-6",
+      "value": 84,
+      "created": "2027-01-18T08:20:00+08:00",
+      "supersedes": null
+    },
+    {
+      "id": "X-7",
+      "group": "EQ-2",
+      "value": 108,
+      "created": "2027-01-18T11:00:00+08:00",
+      "supersedes": "X-2"
+    }
+  ],
+  "slots": [
+    {
+      "id": "CAP-P",
+      "family": "聚合物",
+      "capacity": 1,
+      "max_team_size": 2
+    },
+    {
+      "id": "CAP-A",
+      "family": "合金",
+      "capacity": 1,
+      "max_team_size": 1
+    }
+  ],
+  "applications": [
+    {
+      "id": "A-10",
+      "pool": "CAP-P",
+      "union": [
+        "QING",
+        "HE"
+      ],
+      "support": [
+        "P-10",
+        "P-11"
+      ],
+      "submitted": "2027-01-18T09:45:00+08:00"
+    },
+    {
+      "id": "A-11",
+      "pool": "CAP-P",
+      "union": [
+        "JU"
+      ],
+      "support": [
+        "P-12"
+      ],
+      "submitted": "2027-01-18T09:47:00+08:00"
+    },
+    {
+      "id": "A-12",
+      "pool": "CAP-A",
+      "union": [
+        "YUAN"
+      ],
+      "support": [
+        "P-13"
+      ],
+      "submitted": "2027-01-18T13:00:00+08:00"
+    },
+    {
+      "id": "A-13",
+      "pool": "CAP-P",
+      "union": [
+        "HE",
+        "JU"
+      ],
+      "support": [
+        "P-11",
+        "P-12"
+      ],
+      "submitted": "2027-01-18T09:49:00+08:00"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "L-1",
+      "target": "A-10",
+      "feedback": "seat_confirmed",
+      "happened": "2027-01-18T10:52:00+08:00",
+      "arrived": "2027-01-18T11:04:00+08:00"
+    },
+    {
+      "id": "L-2",
+      "target": "HE",
+      "feedback": "withdraw",
+      "happened": "2027-01-18T10:10:00+08:00",
+      "arrived": "2027-01-18T10:10:00+08:00"
+    },
+    {
+      "id": "L-3",
+      "target": "R-1",
+      "feedback": "detail_requested",
+      "happened": "2027-01-18T10:35:00+08:00",
+      "arrived": "2027-01-18T10:35:00+08:00"
+    }
+  ]
+}
